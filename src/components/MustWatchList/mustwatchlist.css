@@ -1,0 +1,20 @@
+.mustwatchlist {
+    padding: 8px;
+    background-color: #d16161cc;
+    border-radius: 2px;
+    /* versao de display flex */
+    /* min-width: 260px */
+}
+
+.mustwatchlist .title{
+    padding: 4px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.137);
+    text-align: center;
+}
+
+.mustwatchlist .content{
+    padding: 16px 4px;
+    display: flex;
+    flex-direction: column;
+}

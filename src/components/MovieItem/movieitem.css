@@ -1,0 +1,58 @@
+.movieitem {
+    background-color: rgba(146, 36, 36, 0.5);
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 30, 66, 0.25);
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 8px 4px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.movieitem input [type="text"] {
+    border: none;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+
+}
+
+.movieitem select {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+
+}
+
+.btn {
+    margin-top: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background: rgb(252, 82, 82);
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: rgb(177, 64, 64);;
+}
+.btnImg {
+width: 30px;
+height: 20px;
+color: #fff;
+}
+
+.emptyList {
+    text-align: center;
+    border: 1px dashed white;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+
+
+
