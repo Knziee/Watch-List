@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 export default function MovieItem({id, title, movieState, onMovieUpdate, onDeleteMovie}) {
     const [isEditing, setIsEditing] = useState(false);
     const [editableTitle, setEditableTitle] = useState(title);
-    const ontitleChange = (event) => {
+    const onTitleChange = (event) => {
         const newTitle = event.target.value;
         setEditableTitle(newTitle)
         onMovieUpdate(id, newTitle, movieState);
@@ -19,7 +19,7 @@ export default function MovieItem({id, title, movieState, onMovieUpdate, onDelet
                 onDeleteMovie(id);
             }
         }
-    }
+    };
 
     const onMovieStateChange = (event) => {
         onMovieUpdate(id, title, event.target.value)
@@ -29,13 +29,13 @@ export default function MovieItem({id, title, movieState, onMovieUpdate, onDelet
         return (
             <div className="movieitem">
         <input 
-        type="text" 
-        value={editableTitle} 
-        onChange={ontitleChange} 
-        onKeyPress={onKeyPress}
+            type="text" 
+            value={editableTitle} 
+            onChange={onTitleChange} 
+            onKeyPress={onKeyPress}
          />;
             </div>
-         )
+         );
     } else {
         return (
             <div className="movieitem">
@@ -55,5 +55,7 @@ export default function MovieItem({id, title, movieState, onMovieUpdate, onDelet
 MovieItem.propTypes = {
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
-    movieState: PropTypes.string.isRequired
+    movieState: PropTypes.string.isRequired,
+    onTaskUpdate: PropTypes.func.isRequired,
+    onDeleteMovie: PropTypes.func.isRequired
 }

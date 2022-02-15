@@ -3,6 +3,7 @@ import "./mustwatchlist.css";
 import PropTypes from "prop-types";
 import icons8 from "../../img/icons8-mais.svg"
 import MovieItem from "../MovieItem/MovieItem";
+import propTypes from "prop-types";
 
 
 export default function MustWatchList({ title, onAddMovie, movie, onMovieUpdate, movieState, onDeleteMovie}) {
@@ -33,7 +34,6 @@ export default function MustWatchList({ title, onAddMovie, movie, onMovieUpdate,
                     <img src={icons8} alt="icon" className="btnImg"/>
                     Adicionar Filme
                     </button>
-
             </div>
         </div>
     )
@@ -42,5 +42,7 @@ export default function MustWatchList({ title, onAddMovie, movie, onMovieUpdate,
 MustWatchList.propTypes = {
     title: PropTypes.string.isRequired,
     onAddMovie: PropTypes.func.isRequired,
-    movie: PropTypes.array.isRequired
+    movie: PropTypes.array.isRequired,
+    onMovieUpdate: propTypes.func.isRequired,
+    onDeleteMovie: PropTypes.func.isRequired
 }

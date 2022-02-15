@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-
 import Navbar from "./components/Navbar/Navbar";
 import MustWatchList from "./components/MustWatchList/MustWatchList"
 
@@ -8,14 +7,14 @@ let idMovie = 0;
 const generateMovieId = () => {
   idMovie = idMovie + 1
   return idMovie;
-}
+};
 
-function App() {
-    const [movie, setMovie] = useState([])
+export default function App() {
+    const [movie, setMovie] = useState([]);
 
   const addMovie = (title, state) => {
     const newMovie = {
-      id: generateMovieId,
+      id: generateMovieId(),
       title,
       state
     }
@@ -77,4 +76,4 @@ function App() {
   );
 }
 
-export default App;
+
