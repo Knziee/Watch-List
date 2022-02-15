@@ -30,7 +30,7 @@ export default function App() {
         if(movieTitleAndId.id === id) {
           return { ...movieTitleAndId, title, state}
         } else {
-          return movieTitleAndId;
+          return movieTitleAndId
         }
       });
     });

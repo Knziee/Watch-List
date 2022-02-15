@@ -33,7 +33,7 @@ export default function MovieItem({id, title, movieState, onMovieUpdate, onDelet
             value={editableTitle} 
             onChange={onTitleChange} 
             onKeyPress={onKeyPress}
-         />;
+         />
             </div>
          );
     } else {

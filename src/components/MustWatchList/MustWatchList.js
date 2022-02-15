@@ -9,7 +9,7 @@ import propTypes from "prop-types";
 export default function MustWatchList({ title, onAddMovie, movie, onMovieUpdate, movieState, onDeleteMovie}) {
     const addMovie = () => {
 
-        onAddMovie("Novo Filme", movieState);
+        onAddMovie("Novo Filme", movieState)
     }
 
     return(
