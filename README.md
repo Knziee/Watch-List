@@ -26,6 +26,8 @@ Como primeiro projeto em React procurei criar uma solução para o meu "esquecim
 - Adição de nota aos filmes e series inseridos
 - Integração com banco de dados
 
+## Link para teste:
+https://watch-list-three.vercel.app/
 
 ## Desenvolvido por:
 - Rhuan Martins Teixeira
